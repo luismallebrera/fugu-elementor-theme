@@ -1,0 +1,285 @@
+{
+  "version": "1.0.0",
+  "title": "Homepage Template",
+  "type": "page",
+  "content": [
+    {
+      "id": "hero-section",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#0a6cff",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "20",
+          "bottom": "100",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "hero-column",
+          "elType": "column",
+          "settings": {
+            "width": "100"
+          },
+          "elements": [
+            {
+              "id": "hero-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Welcome to Fugu Elementor",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#ffffff"
+              }
+            },
+            {
+              "id": "hero-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "A minimal, Elementor-ready starter theme for building beautiful WordPress sites.",
+                "align": "center",
+                "text_color": "#ffffff"
+              }
+            },
+            {
+              "id": "hero-button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Get Started",
+                "align": "center",
+                "button_type": "primary",
+                "link": {
+                  "url": "#features"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "features-section",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f7f7f7",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "features-heading-column",
+          "elType": "column",
+          "settings": {
+            "width": "100"
+          },
+          "elements": [
+            {
+              "id": "features-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Features",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#333333"
+              }
+            }
+          ]
+        },
+        {
+          "id": "feature-1-column",
+          "elType": "column",
+          "settings": {
+            "width": "33.33"
+          },
+          "elements": [
+            {
+              "id": "feature-1-icon",
+              "elType": "widget",
+              "widgetType": "icon",
+              "settings": {
+                "icon": {
+                  "value": "fas fa-bolt",
+                  "library": "fa-solid"
+                },
+                "align": "center",
+                "primary_color": "#0a6cff"
+              }
+            },
+            {
+              "id": "feature-1-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Fast & Lightweight",
+                "header_size": "h3",
+                "align": "center"
+              }
+            },
+            {
+              "id": "feature-1-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Optimized for performance with minimal code.",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "feature-2-column",
+          "elType": "column",
+          "settings": {
+            "width": "33.33"
+          },
+          "elements": [
+            {
+              "id": "feature-2-icon",
+              "elType": "widget",
+              "widgetType": "icon",
+              "settings": {
+                "icon": {
+                  "value": "fas fa-paint-brush",
+                  "library": "fa-solid"
+                },
+                "align": "center",
+                "primary_color": "#0a6cff"
+              }
+            },
+            {
+              "id": "feature-2-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Fully Customizable",
+                "header_size": "h3",
+                "align": "center"
+              }
+            },
+            {
+              "id": "feature-2-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Build any design with Elementor's drag & drop builder.",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "feature-3-column",
+          "elType": "column",
+          "settings": {
+            "width": "33.33"
+          },
+          "elements": [
+            {
+              "id": "feature-3-icon",
+              "elType": "widget",
+              "widgetType": "icon",
+              "settings": {
+                "icon": {
+                  "value": "fas fa-mobile-alt",
+                  "library": "fa-solid"
+                },
+                "align": "center",
+                "primary_color": "#0a6cff"
+              }
+            },
+            {
+              "id": "feature-3-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Responsive Design",
+                "header_size": "h3",
+                "align": "center"
+              }
+            },
+            {
+              "id": "feature-3-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Looks great on all devices and screen sizes.",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta-section",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#333333",
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "20",
+          "bottom": "60",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "cta-column",
+          "elType": "column",
+          "settings": {
+            "width": "100"
+          },
+          "elements": [
+            {
+              "id": "cta-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Ready to get started?",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#ffffff"
+              }
+            },
+            {
+              "id": "cta-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Download the theme and start building your site today.",
+                "align": "center",
+                "text_color": "#ffffff"
+              }
+            },
+            {
+              "id": "cta-button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Download Now",
+                "align": "center",
+                "button_type": "primary",
+                "button_background_color": "#0a6cff"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
