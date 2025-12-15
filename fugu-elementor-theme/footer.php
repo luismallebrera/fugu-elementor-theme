@@ -10,7 +10,7 @@ if ( function_exists( 'elementor_theme_do_location' ) ) {
         <div class="footer-widgets">
             <?php if ( is_active_sidebar( 'footer-widgets' ) ) : dynamic_sidebar( 'footer-widgets' ); endif; ?>
         </div>
-        <div class="site-info">&copy; <?php echo date_i18n( 'Y' ); ?> <?php bloginfo( 'name' ); ?></div>
+        <div class="site-info">&copy; <?php echo date_i18n( 'Y' ); ?> <?php echo esc_html( get_bloginfo( 'name' ) ); ?></div>
         <?php
     }
 } else {
@@ -18,7 +18,7 @@ if ( function_exists( 'elementor_theme_do_location' ) ) {
     <div class="footer-widgets">
         <?php if ( is_active_sidebar( 'footer-widgets' ) ) : dynamic_sidebar( 'footer-widgets' ); endif; ?>
     </div>
-    <div class="site-info">&copy; <?php echo date_i18n( 'Y' ); ?> <?php bloginfo( 'name' ); ?></div>
+    <div class="site-info">&copy; <?php echo date_i18n( 'Y' ); ?> <?php echo esc_html( get_bloginfo( 'name' ) ); ?></div>
     <?php
 }
 ?>

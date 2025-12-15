@@ -17,7 +17,7 @@ if ( function_exists( 'elementor_theme_do_location' ) ) {
         ?>
         <div class="site-branding">
             <?php if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo(); } ?>
-            <div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></div>
+            <div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a></div>
         </div>
 
         <nav id="site-navigation" role="navigation">
@@ -29,7 +29,7 @@ if ( function_exists( 'elementor_theme_do_location' ) ) {
     ?>
     <div class="site-branding">
         <?php if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo(); } ?>
-        <div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></div>
+        <div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a></div>
     </div>
 
     <nav id="site-navigation" role="navigation">
