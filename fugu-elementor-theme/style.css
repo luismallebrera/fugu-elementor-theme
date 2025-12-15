@@ -10,3 +10,102 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: fugu-elementor
 Tags:        one-column, flexible-header, accessibility-ready, custom-logo
 */
+
+/* Basic reset and box-sizing */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Limit wrapper for content width control */
+.limit-wrapper {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+	position: absolute;
+	top: -999px;
+	left: -999px;
+}
+
+.skip-link:focus {
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	padding: 10px;
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Site header */
+.site-header {
+	background: #fff;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 20px 0;
+}
+
+.header-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.site-branding {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.site-title a {
+	text-decoration: none;
+	color: #333;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+/* Navigation */
+.main-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 20px;
+}
+
+.main-navigation a {
+	text-decoration: none;
+	color: #333;
+}
+
+/* Main content */
+.site-main {
+	padding: 40px 0;
+}
+
+/* Footer */
+.site-footer {
+	background: #f5f5f5;
+	padding: 40px 0 20px;
+	margin-top: 40px;
+}
+
+.footer-widgets {
+	margin-bottom: 20px;
+}
+
+.site-info {
+	text-align: center;
+	padding-top: 20px;
+	border-top: 1px solid #e5e5e5;
+	color: #666;
+}

@@ -10,7 +10,7 @@
 				// Elementor rendered footer here.
 			} else {
 				?>
-				<div class="footer-inner">
+				<div class="footer-inner limit-wrapper">
 					<div class="footer-widgets">
 						<?php if ( is_active_sidebar( 'footer-widgets' ) ) : dynamic_sidebar( 'footer-widgets' ); endif; ?>
 					</div>
@@ -20,7 +20,7 @@
 			}
 		} else {
 			?>
-			<div class="footer-inner">
+			<div class="footer-inner limit-wrapper">
 				<div class="footer-widgets">
 					<?php if ( is_active_sidebar( 'footer-widgets' ) ) : dynamic_sidebar( 'footer-widgets' ); endif; ?>
 				</div>
