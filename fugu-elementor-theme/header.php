@@ -18,7 +18,7 @@
 				// Elementor header rendered inside the wrapper.
 			} else {
 				?>
-				<div class="header-inner limit-wrapper">
+				<div class="header-inner">
 					<div class="site-branding">
 						<?php if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo(); } ?>
 						<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a></div>
@@ -32,7 +32,7 @@
 			}
 		} else {
 			?>
-			<div class="header-inner limit-wrapper">
+			<div class="header-inner">
 				<div class="site-branding">
 					<?php if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo(); } ?>
 					<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a></div>
