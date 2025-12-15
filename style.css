@@ -1,0 +1,38 @@
+/*
+Theme Name: Fugu
+Theme URI: https://github.com/luismallebrera/fugu-elementor-theme
+Author: Luis Mallebrera
+Author URI: https://github.com/luismallebrera
+Description: A minimal WordPress theme with full Elementor Theme Builder support
+Version: 1.0.0
+Requires at least: 5.0
+Tested up to: 6.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: fugu
+Tags: elementor, theme-builder, minimal, lightweight
+*/
+
+/* 
+ * Minimal theme styles
+ * Main styling should be done through Elementor
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.site-main {
+    min-height: 50vh;
+}
+
+.content-area {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
