@@ -25,14 +25,13 @@ Full documentation is available in the theme's [README.md](fugu-elementor-theme/
 
 ## Building the Theme ZIP
 
-To create a distributable ZIP file:
+To create a distributable ZIP file from the repository root:
 
 ```bash
-cd fugu-elementor-theme/bin
-./create-zip.sh
+./bin/create-zip.sh
 ```
 
-This will create `fugu-elementor-theme.zip` ready for distribution.
+This will create `fugu-elementor-theme.zip` in the repository root, ready for distribution.
 
 ## Requirements
 

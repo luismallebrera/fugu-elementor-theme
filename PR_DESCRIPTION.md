@@ -74,8 +74,8 @@ This PR adds a complete, production-ready Elementor-aware WordPress starter them
 
 1. **Create the ZIP file:**
    ```bash
-   cd bin
-   ./create-zip.sh
+   # From the repository root
+   ./bin/create-zip.sh
    ```
    This creates `fugu-elementor-theme.zip` in the repository root.
 

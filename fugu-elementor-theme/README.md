@@ -116,21 +116,37 @@ You can also create custom templates for:
 
 ## Creating a Release ZIP
 
-To create a distributable ZIP file of this theme:
+To create a distributable ZIP file of this theme for use in WordPress or for releases:
 
-1. Navigate to the root of this repository
-2. Run the build script:
-   ```bash
-   cd bin
-   ./create-zip.sh
-   ```
-3. The script will create `fugu-elementor-theme.zip` in the current directory
-4. This ZIP file is ready to be uploaded to WordPress or distributed
+### From the Repository Root
+
+If you have the complete repository, use the root-level script:
+
+```bash
+# From the repository root directory
+./bin/create-zip.sh
+```
+
+This creates `fugu-elementor-theme.zip` in the repository root.
+
+### From the Theme Directory
+
+If you only have the theme directory, use the theme's own script:
+
+```bash
+# From the theme directory itself
+cd ..
+./fugu-elementor-theme/bin/create-zip.sh fugu-elementor-theme
+```
+
+### Manual Method
 
 Alternatively, you can manually create a ZIP:
 ```bash
 zip -r fugu-elementor-theme.zip fugu-elementor-theme/ -x "*.git*" -x "*node_modules*" -x "*.DS_Store"
 ```
+
+The resulting ZIP file is ready to be uploaded to WordPress or distributed as a release.
 
 ## Requirements
 
