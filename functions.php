@@ -212,6 +212,33 @@ if ( ! function_exists( 'fugu_elementor_scripts_styles' ) ) {
 }
 add_action( 'wp_enqueue_scripts', 'fugu_elementor_scripts_styles' );
 
+if ( ! function_exists( 'fugu_elementor_enqueue_select2' ) ) {
+	/**
+	 * Enqueue Select2 library for dropdown enhancements.
+	 *
+	 * @return void
+	 */
+	function fugu_elementor_enqueue_select2() {
+		// Enqueue Select2 CSS
+		wp_enqueue_style(
+			'select2',
+			'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css',
+			[],
+			'4.1.0'
+		);
+		
+		// Enqueue Select2 JS
+		wp_enqueue_script(
+			'select2',
+			'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js',
+			['jquery'],
+			'4.1.0',
+			true
+		);
+	}
+}
+add_action( 'wp_enqueue_scripts', 'fugu_elementor_enqueue_select2' );
+
 if ( ! function_exists( 'fugu_elementor_register_elementor_locations' ) ) {
 	/**
 	 * Register Elementor Locations.
